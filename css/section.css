@@ -1,0 +1,53 @@
+.fa-bxs-container {
+    background-color: #0a2240;
+    padding: 45px;
+    margin: auto;
+}
+
+.fa-bxs {
+    border-radius: 10px;
+    width: 150px;
+    max-width: 150px;
+    height: 150px;
+    max-height: 150px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: #ffffff;
+    color: #000000;
+    transition: transform ease 700ms;
+}
+
+.fa-bxs a {
+    font-weight: normal;
+    display: block;
+    text-decoration: none !important;
+}
+
+.fa-bxs:hover,
+.fa-bxs:hover a {
+    background-color: #ffd43b;
+    color: #000000;
+}
+
+.fa-bxs:hover {
+    position: relative;
+    transform: translate(0, -4px);
+    color: #000000;
+}
+
+.fa-bxs .font-awesome-text,
+.fa-bxs .font-awesome-text a {
+    font-weight: normal;
+    text-transform: capitalize;
+    color: #000000 !important;
+    text-decoration: none !important;
+    font-size: 13px;
+}
+
+.fa-solid-bxs {
+    padding-top: 40px;
+    font-size: 50px;
+    color: #000000;
+}
