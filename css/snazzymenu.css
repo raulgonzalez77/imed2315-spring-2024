@@ -1,3 +1,6 @@
+@import "global.css";
+@import "main.css";
+
 @-webkit-keyframes fadeIn {
     0% {
         opacity: 0;
@@ -93,7 +96,7 @@
     width: 100%;
     z-index: 999;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 
 .snazzymenu ul li a {
