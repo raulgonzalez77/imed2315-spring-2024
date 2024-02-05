@@ -257,7 +257,7 @@
 
 .snazzymenu.dark {
     /*background:rgba(0,0,0,.95)*/
-    background-color: #0a2140;
+    background-color: var(--secondarycolor) !important;
 }
 
 .snazzymenu.dark .menu-toggle,
@@ -280,7 +280,7 @@
 
 .snazzymenu.dark.desktop .menu {
     /*background:rgba(0,0,0,.95)*/
-    background-color: #0a2140;
+    background-color: var(--secondarycolor) !important;
     /*background-color: #0a2140e6;
 	*/
 }
@@ -300,7 +300,7 @@
 
 .snazzymenu.dark.desktop .menu .mega-menu {
     /*background:rgba(0,0,0,.95)*/
-    background-color: #0a2140;
+    background-color: var(--secondarycolor) !important;
     /*background-color: #0a2140e6;
 	*/
 }
