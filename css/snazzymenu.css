@@ -92,8 +92,8 @@
     position: absolute;
     width: 100%;
     z-index: 999;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .snazzymenu ul li a {
