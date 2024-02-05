@@ -46,37 +46,7 @@ html {
     box-sizing: inherit
 }
 
-body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    font-family: 'Sora', sans-serif;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-    color: #22272e;
-    position: relative;
-    width: 100%;
-    overflow-x: hidden
-}
 
-h1 {
-    margin: 0 0 .5rem;
-    color: #22272e
-}
-
-h2 {
-    font-size: 1.25rem;
-    font-weight: 500;
-    margin: 0;
-    color: #22272e
-}
-
-h3 {
-    margin: 0 0 1rem;
-    font-weight: 600;
-    color: #22272e
-}
 
 p {
     margin: 0;
