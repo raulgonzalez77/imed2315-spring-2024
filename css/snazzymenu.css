@@ -95,8 +95,8 @@
     position: absolute;
     width: 100%;
     z-index: 999;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .snazzymenu ul li a {
@@ -262,7 +262,7 @@
 
 .snazzymenu.dark {
     /*background:rgba(0,0,0,.95)*/
-    background-color: #f296ad;
+    background-color: #cc7e92;
 }
 
 .snazzymenu.dark .menu-toggle,
@@ -285,7 +285,7 @@
 
 .snazzymenu.dark.desktop .menu {
     /*background:rgba(0,0,0,.95)*/
-    background-color: #f296ad;
+    background-color: #cc7e92;
     /*background-color: #0a2140e6;
 	*/
 }
@@ -305,7 +305,7 @@
 
 .snazzymenu.dark.desktop .menu .mega-menu {
     /*background:rgba(0,0,0,.95)*/
-    background-color: #f296ad;
+    background-color: #cc7e92;
     /*background-color: #0a2140e6;
 	*/
 }
