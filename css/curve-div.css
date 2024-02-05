@@ -50,7 +50,7 @@
     margin: auto;
 }
 
-.fa-standard-page {
+.msri-bxs {
     /*border: 1px solid #ffffff;*/
     border-radius: 10px;
     width: 150px;
@@ -63,7 +63,7 @@
     margin-bottom: 5px;
 }
 
-.fa-standard-page a {
+.msri-bxs a {
     text-decoration: none !important;
 }
 
@@ -73,8 +73,8 @@
     color: #000000;
 }
 
-.fa-standard-page .font-awesome-text,
-.fa-standard-page .font-awesome-text a {
+.msri-bxs .font-awesome-text,
+.msri-bxs .font-awesome-text a {
     font-weight: normal;
     text-transform: capitalize;
     color: #000000 !important;
