@@ -111,9 +111,6 @@
     color: #000000;
 }
 
-.degree-button {
-    margin-top: 20px;
-}
 
 
 .msri-bx-container-button-div {
@@ -135,7 +132,7 @@
 
 .h2 {
     font-family: sans-serif;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .button-register {
