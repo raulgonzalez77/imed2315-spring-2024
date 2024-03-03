@@ -36,6 +36,13 @@
   <!-- Add the slick-theme.css if you want default styling -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 
+  <!-- Begin Expandible Search -->
+  <link rel="stylesheet" type="text/css" href="ExpandingSearchBar/css/default.css" />
+  <link rel="stylesheet" type="text/css" href="ExpandingSearchBar/css/component.css" />
+  <script src="ExpandingSearchBar/js/modernizr.custom.js"></script>
+  <!-- End Expandible Search -->
+
+
   <!-- Local CSS -->
   <link rel="stylesheet" href="/css/snazzymenu.css">
   <!-- -->
@@ -1162,6 +1169,15 @@
 
 
     </script>
+
+
+    <!-- Begin Expandable Search -->
+    <script src="ExpandingSearchBar/js/classie.js"></script>
+    <script src="ExpandingSearchBar/js/uisearch.js"></script>
+    <script>
+      new UISearch(document.getElementById('sb-search'));
+    </script>
+    <!-- End Expandable Search-->
 
     <!-- Local Javascript -->
     <script src="/js/scripts.js"></script>
