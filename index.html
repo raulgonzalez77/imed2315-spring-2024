@@ -42,6 +42,23 @@
   <script src="ExpandingSearchBar/js/modernizr.custom.js"></script>
   <!-- End Expandible Search -->
 
+  <!-- experimental -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+  <script type="text/javascript">
+    algoliasearchNetlify({
+      appId: 'DZPSWLUOIF',
+      apiKey: '988d8364cbc1123328b5cbbe1ec2b1ac',
+      siteId: 'ca493c41-3d93-4207-b4cc-2eba584b3451',
+      branch: 'main',
+      selector: 'div #search',
+    });
+  </script>
+
+  <!-- experimental-->
+
 
   <!-- Local CSS -->
   <link rel="stylesheet" href="/css/snazzymenu.css">
