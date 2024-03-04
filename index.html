@@ -53,7 +53,7 @@
       apiKey: '988d8364cbc1123328b5cbbe1ec2b1ac',
       siteId: 'ca493c41-3d93-4207-b4cc-2eba584b3451',
       branch: 'main',
-      selector: 'div #search',
+      selector: '#search-algolia',
     });
   </script>
 
@@ -106,8 +106,8 @@
         <p>
         <div id="sb-search" class="sb-search">
           <form>
-            <span class="sb-search-input" placeholder="Enter your search term..." type="search" name="search"
-              id="search"></span>
+            <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search"
+              id="search">
             <input class="sb-search-submit" type="submit" value="">
             <span class="sb-icon-search"></span>
           </form>
@@ -116,7 +116,7 @@
 
 
         <h3>Enter your search term</h3>
-
+        <div id="search-algolia"></div>
         <br />
         <p>
           We are always striving to be better. Please let us know if you did not find what you were looking for at
