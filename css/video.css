@@ -24,6 +24,39 @@
 
 
 
+
+.video-container {
+    position: relative;
+}
+
+video {
+    height: auto;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.overlay-desc {
+    background: rgba(0, 0, 0, 0.0);
+    position: absolute;
+    top: 80px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1400px) {
+    .overlay-desc {
+        top: 100px !important;
+    }
+}
+
+
+
+
+
 /*play/pause button*/
 .fa-circle-play,
 .fa-circle-pause {
