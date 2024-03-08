@@ -60,7 +60,7 @@ video {
     color: rgba(255, 255, 255, 1);
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 768px) {
     .span-wrapper {
         font-size: 50px;
         font-weight: normal;
