@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
 
-
+    /* video play/paus when user leaves page*/
     document.onvisibilitychange = function () {
         if (document.visibilityState === 'hidden') {
             video.pause();
@@ -103,7 +103,15 @@ document.addEventListener('DOMContentLoaded', function () {
             isRunning = false;  //aded to play/pause inteval
             //clearInterval(interval);  //aded to play/pause inteval
         }
+        else {
+            video.play();
+            jQuery("#play-pause").html('<i class="fa-solid fa-circle-pause"></i>');
+            isRunning = true;  //aded to play/pause inteval
+            //startTheInterval();  //aded to play/pause inteval
+        }
     };
+
+
 
 
 
