@@ -5,9 +5,14 @@
 
     /* position the div in center */
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.chevron-p {
+    font-weight: bold;
+    font-size: 70px;
 }
 
 .fa-solid {
