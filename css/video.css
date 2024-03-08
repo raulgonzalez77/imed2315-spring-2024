@@ -60,6 +60,12 @@ video {
     color: rgba(255, 255, 255, 1);
 }
 
+@media only screen and (max-width: 1400px) {
+    .span-wrapper {
+        font-size: 50px;
+        font-weight: normal;
+    }
+}
 
 
 /*play/pause button*/
