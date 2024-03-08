@@ -56,8 +56,10 @@
       selector: '#search-algolia',
     });
   </script>
-
   <!-- experimental-->
+
+
+
 
 
   <!-- Local CSS -->
@@ -65,6 +67,7 @@
   <!-- -->
   <link href="css/snazzymenu-local.css" rel="stylesheet" />
   <link rel="stylesheet" href="/css/curve-div.css">
+  <link rel="stylesheet" href="/css/video.css">
   <link rel="stylesheet" href="/css/styles.css">
 
 </head>
@@ -416,7 +419,7 @@
     <!-- Top Navbar ends -->
   </header>
   <main>
-    <!-- Carousel Begins -->
+    <!-- Carousel Begins 
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -466,8 +469,35 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
+    </div>-->
     <!-- Carousel Ends-->
+
+
+    <!-- Begin Video -->
+    <div class="video-container" id="BlinnVid">
+      <video width="300" height="150" autoplay="autoplay" id="video" loop="loop" muted="">
+        <!-- <source src="https://www.blinn.edu/_videos/vid1_small.mp4" type="video/mp4" /> Your browser does not support the video tag. -->
+        <source src="https://res.cloudinary.com/dexnm5cpk/video/upload/f_auto:video,q_auto/blinn-intro-video"
+          type="video/mp4" /> Your browser does not support the video tag.
+
+      </video>
+      <!--  <div class="overlay-desc text-center" data-aos="zoom-in" data-aos-duration="3000" style="position: absolute; margin: auto; top: 150px;">	-->
+      <div class="overlay-desc text-center" data-aos="zoom-in" data-aos-duration="3000"
+        style="position: absolute; margin: auto; top: 150px;">
+        <span style="font-size: 100px; font-weight: bold; color: rgba(255, 255, 255, 1);">
+          <span id="message">139 years of tradition</span>
+        </span>
+      </div>
+      <!--	-->
+      <div class="overlay-logo" id="overlay-desc">
+        <!-- <img src="https://www.blinn.edu/_demo/_raultests/_redesign-tests/december-2023/images/logo-vertical.png" /> -->
+        <span id="play-pause">
+          <i class="fa-solid fa-circle-pause"></i>
+        </span>
+      </div>
+    </div>
+    <!-- End Video -->
+
 
     <!-- Begin First Font Awesome Icons -->
     <div class="container-fluid text-center fa-row">
@@ -1208,6 +1238,8 @@
     <!-- End Expandable Search-->
 
     <!-- Local Javascript -->
+    <script src="/js/video.js"></script>
+
     <script src="/js/scripts.js"></script>
   </div>
   <!-- End JS Section -->
