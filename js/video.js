@@ -8,11 +8,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     var messages = [
-        "Astonish",
-        "Beautiful",
-        "Radiant",
-        "Expectacular",
-        "BRIDE"
+        "The Astonishing",
+        "The Beautiful",
+        "The Radiant",
+        "The Expectacular",
+        "The Breathtaking",
+        "The Captivating",
+        "THE BRIDE",
+        "Raul's Bridal...And Oil Change!"
     ];
 
     var index = 0;
