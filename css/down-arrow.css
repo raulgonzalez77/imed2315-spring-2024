@@ -1,0 +1,127 @@
+#chevron-div {
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-solid {
+    font-size: 100px;
+    color: #fff;
+}
+
+/* make font awesome icon bounce */
+.bounce {
+    animation: bounce 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-12px);
+    }
+
+    @-webkit-keyframes bounce {
+        0% {
+            top: 0;
+        }
+
+        50% {
+            top: -0.2em;
+        }
+
+        70% {
+            top: -0.3em;
+        }
+
+        100% {
+            top: 0;
+        }
+    }
+
+    @-moz-keyframes bounce {
+        0% {
+            top: 0;
+        }
+
+        50% {
+            top: -0.2em;
+        }
+
+        70% {
+            top: -0.3em;
+        }
+
+        100% {
+            top: 0;
+        }
+    }
+
+    @-o-keyframes bounce {
+        0% {
+            top: 0;
+        }
+
+        50% {
+            top: -0.2em;
+        }
+
+        70% {
+            top: -0.3em;
+        }
+
+        100% {
+            top: 0;
+        }
+    }
+
+    @-ms-keyframes bounce {
+        0% {
+            top: 0;
+        }
+
+        50% {
+            top: -0.2em;
+        }
+
+        70% {
+            top: -0.3em;
+        }
+
+        100% {
+            top: 0;
+        }
+    }
+
+    @keyframes bounce {
+        0% {
+            top: 0;
+        }
+
+        50% {
+            top: -0.2em;
+        }
+
+        70% {
+            top: -0.3em;
+        }
+
+        100% {
+            top: 0;
+        }
+    }
+
+    /* make font awesome icon bounce */
