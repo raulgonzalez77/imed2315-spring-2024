@@ -5,10 +5,9 @@
 
     /* position the div in center */
     position: absolute;
-    top: 80%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: block;
 }
 
 .chevron-span,
@@ -20,8 +19,9 @@
 }
 
 .fa-custom-scroll {
-    font-size: 100px;
+    font-size: 80px;
     color: rgba(255, 255, 255, 0.9);
+    display: block;
 }
 
 /* make font awesome icon bounce */
