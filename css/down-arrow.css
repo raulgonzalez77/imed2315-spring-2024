@@ -16,12 +16,12 @@
     font-weight: normal;
     font-size: 50px;
     display: block;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .fa-custom-scroll {
     font-size: 100px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 /* make font awesome icon bounce */
