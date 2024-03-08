@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     var messages = [
-        "Innovative partnerships",
-        "Dedicated faculty",
-        "Affordable education",
-        "Award-winning programs",
-        "139 years of tradition"
+        "Astonish",
+        "Beautiful",
+        "Radiant",
+        "Expectacular",
+        "BRIDE"
     ];
 
     var index = 0;
