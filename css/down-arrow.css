@@ -11,15 +11,18 @@
     display: block;
 }
 
-.chevron-span {
+.chevron-span,
+.chevron-span a {
     font-weight: normal;
     font-size: 50px;
     display: block;
+    color: #fff;
 }
 
 .fa-custom-scroll {
     font-size: 100px;
     color: #fff;
+    font-weight: normal;
 }
 
 /* make font awesome icon bounce */
