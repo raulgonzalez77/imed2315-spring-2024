@@ -12,6 +12,7 @@
     display: block;
 }
 
+/*adds overlay to the video*/
 .video-container:before {
     content: '';
     position: absolute;
@@ -53,7 +54,11 @@ video {
     }
 }
 
-
+.span-wrapper {
+    font-size: 100px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
 
 
 
