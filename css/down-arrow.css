@@ -17,10 +17,9 @@
     display: block;
 }
 
-.fa-chevron-down {
+.fa-solid {
     font-size: 100px;
     color: #fff;
-    font-weight: normal;
 }
 
 /* make font awesome icon bounce */
