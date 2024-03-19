@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log("mobile");
             $('.BlinnVid-desktop').hide();
             $('.BlinnVid-mobile').show();
-
+            $('#BlinnVid-desktop').trigger('pause');
 
         }
         else {
@@ -148,30 +148,13 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log('desktop');
             $('.BlinnVid-desktop').show();
             $('.BlinnVid-mobile').hide();
-
+            $('#BlinnVid-mobile').trigger('pause');
 
         }
     });
 
 
 
-
-
-
-    if ($('#BlinnVid-desktop').is(":visible")) {
-        //default
-    }
-    else {
-        $('#BlinnVid-desktop').trigger('pause');
-    }
-
-
-    if ($('#BlinnVid-mobile').is(":visible")) {
-        //default
-    }
-    else {
-        $('#BlinnVid-mobile').trigger('pause');
-    }
 
 
     /*prevent scrolling on spacebar keydonw 
