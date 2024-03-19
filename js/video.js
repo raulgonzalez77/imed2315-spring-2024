@@ -49,19 +49,48 @@ document.addEventListener('DOMContentLoaded', function () {
     /*play/pause video*/
     jQuery(document).ready(function () {
         jQuery("#play-pause").click(function () {
-            if (jQuery("#video").get(0).paused) {
-                jQuery("#video").trigger('play');
-                jQuery("#play-pause").html('<i class="fa-solid fa-circle-pause"></i>');
-                isRunning = true;  //aded to play/pause inteval
-                //interval(true);  //aded to play/pause inteval
-                //jQuery(".play").fadeOut(500);
-            } else {
-                jQuery("#video").trigger('pause');
-                jQuery("#play-pause").html('<i class="fa-solid fa-circle-play"></i>');
-                isRunning = false;  //aded to play/pause inteval
-                //clearInterval(interval);  //aded to play/pause inteval
-                //jQuery(".play").fadeIn(500);
+
+
+            if ($('#video').is(":visible")) {
+
+                if (jQuery("#video").get(0).paused) {
+                    jQuery("#video").trigger('play');
+                    jQuery("#play-pause").html('<i class="fa-solid fa-circle-pause"></i>');
+                    isRunning = true;  //aded to play/pause inteval
+                    //interval(true);  //aded to play/pause inteval
+                    //jQuery(".play").fadeOut(500);
+                } else {
+                    jQuery("#video").trigger('pause');
+                    jQuery("#play-pause").html('<i class="fa-solid fa-circle-play"></i>');
+                    isRunning = false;  //aded to play/pause inteval
+                    //clearInterval(interval);  //aded to play/pause inteval
+                    //jQuery(".play").fadeIn(500);
+                }
+
             }
+
+
+
+            if ($('#video-mobile').is(":visible")) {
+
+                if (jQuery("#video-mobile").get(0).paused) {
+                    jQuery("#video-mobile").trigger('play');
+                    jQuery("#play-pause").html('<i class="fa-solid fa-circle-pause"></i>');
+                    isRunning = true;  //aded to play/pause inteval
+                    //interval(true);  //aded to play/pause inteval
+                    //jQuery(".play").fadeOut(500);
+                } else {
+                    jQuery("#video-mobile").trigger('pause');
+                    jQuery("#play-pause").html('<i class="fa-solid fa-circle-play"></i>');
+                    isRunning = false;  //aded to play/pause inteval
+                    //clearInterval(interval);  //aded to play/pause inteval
+                    //jQuery(".play").fadeIn(500);
+                }
+
+            }
+
+
+
         });
     });
 
