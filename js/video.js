@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 if (videoMobile.paused) {
 
-                    video.play();
+                    videoMobile.play();
                     jQuery("#play-pause").html('<i class="fa-solid fa-circle-pause"></i>');
                     isRunning = true;  //aded to play/pause inteval
                     //startTheInterval();  //aded to play/pause inteval
