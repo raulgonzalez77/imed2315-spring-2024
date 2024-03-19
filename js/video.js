@@ -71,22 +71,49 @@ document.addEventListener('DOMContentLoaded', function () {
     var currentInterval;
 
     var video = document.getElementById('video');
+    var videoMobile = document.getElementById('video-mobile');
+
     document.onkeypress = function (e) {
         if ((e || window.event).keyCode === 32) {
 
-            if (video.paused) {
+            if ($('#video').is(":visible")) {
 
-                video.play();
-                jQuery("#play-pause").html('<i class="fa-solid fa-circle-pause"></i>');
-                isRunning = true;  //aded to play/pause inteval
-                //startTheInterval();  //aded to play/pause inteval
+                if (video.paused) {
+
+                    video.play();
+                    jQuery("#play-pause").html('<i class="fa-solid fa-circle-pause"></i>');
+                    isRunning = true;  //aded to play/pause inteval
+                    //startTheInterval();  //aded to play/pause inteval
+                }
+                else {
+
+                    video.pause();
+                    jQuery("#play-pause").html('<i class="fa-solid fa-circle-play"></i>');
+                    isRunning = false;  //aded to play/pause inteval
+                    //clearInterval(interval);  //aded to play/pause inteval
+                }
+
             }
-            else {
 
-                video.pause();
-                jQuery("#play-pause").html('<i class="fa-solid fa-circle-play"></i>');
-                isRunning = false;  //aded to play/pause inteval
-                //clearInterval(interval);  //aded to play/pause inteval
+
+
+            if ($('#video-mobile').is(":visible")) {
+
+                if (videoMobile.paused) {
+
+                    video.play();
+                    jQuery("#play-pause").html('<i class="fa-solid fa-circle-pause"></i>');
+                    isRunning = true;  //aded to play/pause inteval
+                    //startTheInterval();  //aded to play/pause inteval
+                }
+                else {
+
+                    videoMobile.pause();
+                    jQuery("#play-pause").html('<i class="fa-solid fa-circle-play"></i>');
+                    isRunning = false;  //aded to play/pause inteval
+                    //clearInterval(interval);  //aded to play/pause inteval
+                }
+
             }
 
             return e.keyCode !== 32;
@@ -99,16 +126,19 @@ document.addEventListener('DOMContentLoaded', function () {
     document.onvisibilitychange = function () {
         if (document.visibilityState === 'hidden') {
             video.pause();
+            videoMobile.pause();
             jQuery("#play-pause").html('<i class="fa-solid fa-circle-play"></i>');
             isRunning = false;  //aded to play/pause inteval
             //clearInterval(interval);  //aded to play/pause inteval
         }
+        /*
         else {
             video.play();
             jQuery("#play-pause").html('<i class="fa-solid fa-circle-pause"></i>');
             isRunning = true;  //aded to play/pause inteval
             //startTheInterval();  //aded to play/pause inteval
         }
+        */
     };
 
 
@@ -123,8 +153,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     //credit to https://stackoverflow.com/questions/27934728/video-doesnt-update-after-modifying-the-src-property-of-its-source-element
-    var videoDesktop = document.getElementById('video-desktop');
-    var videoMobile = document.getElementById('video-mobile');
     $(window).on('resize load pagebeforecreate', function () {
         //$(document).on("load resize pagebeforecreate", function () {
         if ($(window).width() < 768) {
