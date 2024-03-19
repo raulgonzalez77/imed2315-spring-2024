@@ -120,6 +120,11 @@ document.addEventListener('DOMContentLoaded', function () {
             $(".vid-ogg").attr("src", "https://res.cloudinary.com/dexnm5cpk/video/upload/f_auto:video,q_auto,c_crop,ar_9:16/sample-wedding-video_o7wkir.ogg")
             $(".vid-mp4").attr("src", "https://res.cloudinary.com/dexnm5cpk/video/upload/f_auto:video,q_auto,c_crop,ar_9:16/sample-wedding-video_o7wkir.mp4")
         }
+        else {
+            $(".vid-webm").attr("src", "https://res.cloudinary.com/dexnm5cpk/video/upload/f_auto:video,q_auto,c_crop,ar_16:9/sample-wedding-video_o7wkir.webm")
+            $(".vid-ogg").attr("src", "https://res.cloudinary.com/dexnm5cpk/video/upload/f_auto:video,q_auto,c_crop,ar_16:9/sample-wedding-video_o7wkir.ogg")
+            $(".vid-mp4").attr("src", "https://res.cloudinary.com/dexnm5cpk/video/upload/f_auto:video,q_auto,c_crop,ar_16:9/sample-wedding-video_o7wkir.mp4")
+        }
     });
 
 
