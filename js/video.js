@@ -123,6 +123,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     //credit to https://stackoverflow.com/questions/27934728/video-doesnt-update-after-modifying-the-src-property-of-its-source-element
+    var videoDesktop = document.getElementById('video-desktop');
+    var videoMobile = document.getElementById('video-mobile');
     $(window).on('resize load pagebeforecreate', function () {
         //$(document).on("load resize pagebeforecreate", function () {
         if ($(window).width() < 768) {
@@ -135,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log("mobile");
             $('.BlinnVid-desktop').hide();
             $('.BlinnVid-mobile').show();
-            $('#BlinnVid-desktop').trigger('pause');
+            $('.BlinnVid-desktop').trigger('pause');
 
         }
         else {
@@ -148,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log('desktop');
             $('.BlinnVid-desktop').show();
             $('.BlinnVid-mobile').hide();
-            $('#BlinnVid-mobile').trigger('pause');
+            $('.BlinnVid-mobile').trigger('pause');
 
         }
     });
