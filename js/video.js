@@ -133,8 +133,8 @@ document.addEventListener('DOMContentLoaded', function () {
             //$(".vid-mp4").attr("src", "https://res.cloudinary.com/dexnm5cpk/video/upload/f_auto:video,q_auto,c_crop,ar_9:16/sample-wedding-video_o7wkir")
             //document.querySelector('.vid-mp4').src = "https://res.cloudinary.com/dexnm5cpk/video/upload/f_auto:video,q_auto,c_crop,ar_9:16/sample-wedding-video_o7wkir";
             console.log("mobile");
-            $('#BlinnVid').hide();
-            $('#BlinnVid-mobile').show();
+            $('.BlinnVid-desktop').hide();
+            $('.BlinnVid-mobile').show();
 
 
         }
@@ -146,8 +146,8 @@ document.addEventListener('DOMContentLoaded', function () {
             //$(".vid-mp4").attr("src", "https://res.cloudinary.com/dexnm5cpk/video/upload/f_auto:video,q_auto,c_crop,ar_16:9/sample-wedding-video_o7wkir")
             //document.querySelector('.vid-mp4').src = "https://res.cloudinary.com/dexnm5cpk/video/upload/f_auto:video,q_auto,c_crop,ar_16:9/sample-wedding-video_o7wkir";
             console.log('desktop');
-            $('#BlinnVid').show();
-            $('#BlinnVid-mobile').hide();
+            $('.BlinnVid-desktop').show();
+            $('.BlinnVid-mobile').hide();
 
 
         }
