@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
             $('.BlinnVid-desktop').hide();
             $('.BlinnVid-desktop').trigger('pause');
             $('.BlinnVid-mobile').show();
-            $('.BlinnVid--mobile').trigger('play');
+            $('.BlinnVid-mobile').trigger('play');
 
         }
         else {
