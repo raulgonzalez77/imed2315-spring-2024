@@ -113,6 +113,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
+
+
+
+
+
+
+
+
     //credit to https://stackoverflow.com/questions/27934728/video-doesnt-update-after-modifying-the-src-property-of-its-source-element
     $(window).on('resize load pagebeforecreate', function () {
         //$(document).on("load resize pagebeforecreate", function () {
@@ -121,10 +130,12 @@ document.addEventListener('DOMContentLoaded', function () {
              $(".vid-ogg").attr("src", "https://res.cloudinary.com/dexnm5cpk/video/upload/f_auto:video,q_auto,c_crop,ar_9:16/sample-wedding-video_o7wkir.ogg")
              $(".vid-mp4").attr("src", "https://res.cloudinary.com/dexnm5cpk/video/upload/f_auto:video,q_auto,c_crop,ar_9:16/sample-wedding-video_o7wkir.mp4")
             */
-            $(".vid-mp4").attr("src", "https://res.cloudinary.com/dexnm5cpk/video/upload/f_auto:video,q_auto,c_crop,ar_9:16/sample-wedding-video_o7wkir")
+            //$(".vid-mp4").attr("src", "https://res.cloudinary.com/dexnm5cpk/video/upload/f_auto:video,q_auto,c_crop,ar_9:16/sample-wedding-video_o7wkir")
             //document.querySelector('.vid-mp4').src = "https://res.cloudinary.com/dexnm5cpk/video/upload/f_auto:video,q_auto,c_crop,ar_9:16/sample-wedding-video_o7wkir";
             console.log("mobile");
-            $(".vid-mp4").load();
+            $('#BlinnVid').hide();
+            $('#BlinnVid-mobile').show();
+
 
         }
         else {
@@ -132,13 +143,35 @@ document.addEventListener('DOMContentLoaded', function () {
             $(".vid-ogg").attr("src", "https://res.cloudinary.com/dexnm5cpk/video/upload/f_auto:video,q_auto,c_crop,ar_16:9/sample-wedding-video_o7wkir.ogg")
             $(".vid-mp4").attr("src", "https://res.cloudinary.com/dexnm5cpk/video/upload/f_auto:video,q_auto,c_crop,ar_16:9/sample-wedding-video_o7wkir.mp4")
             */
-            $(".vid-mp4").attr("src", "https://res.cloudinary.com/dexnm5cpk/video/upload/f_auto:video,q_auto,c_crop,ar_16:9/sample-wedding-video_o7wkir")
+            //$(".vid-mp4").attr("src", "https://res.cloudinary.com/dexnm5cpk/video/upload/f_auto:video,q_auto,c_crop,ar_16:9/sample-wedding-video_o7wkir")
             //document.querySelector('.vid-mp4').src = "https://res.cloudinary.com/dexnm5cpk/video/upload/f_auto:video,q_auto,c_crop,ar_16:9/sample-wedding-video_o7wkir";
             console.log('desktop');
-            $(".vid-mp4").load();
+            $('#BlinnVid').show();
+            $('#BlinnVid-mobile').hide();
+
+
         }
     });
 
+
+
+
+
+
+    if ($('#BlinnVid').is(":visible")) {
+        //default
+    }
+    else {
+        $('#BlinnVid').trigger('pause');
+    }
+
+
+    if ($('#BlinnVid-mobile').is(":visible")) {
+        //default
+    }
+    else {
+        $('#BlinnVid-mobile').trigger('pause');
+    }
 
 
     /*prevent scrolling on spacebar keydonw 
