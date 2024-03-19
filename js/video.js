@@ -158,11 +158,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    if ($('#BlinnVid').is(":visible")) {
+    if ($('#BlinnVid-desktop').is(":visible")) {
         //default
     }
     else {
-        $('#BlinnVid').trigger('pause');
+        $('#BlinnVid-desktop').trigger('pause');
     }
 
 
