@@ -76,6 +76,107 @@
 <body>
   <header>
 
+
+
+
+
+    <!-- Begin Offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          Raul's Bridal...And Oil Change
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="text-center">
+          <div class="spokesperson">
+            <img alt="Spokesperson" class="cropped-offcanvas" src="/images/square/spokesperson.jpg">
+          </div>
+          <br>
+          <blockquote>
+            Thanks you Raul for going out of your way to help me pick up the
+            perferct dress and then changing the oil of my car!
+            <cite>Rossie Williams</cite>
+          </blockquote>
+
+          <a class="btn btn-outline-primary btn-offcanvas-left" href="gallery.html">Gallery</a>
+          <a class="btn btn-outline-primary btn-offcanvas-left" href="participation-form.html">Participation Form</a>
+          <a class="btn btn-outline-primary btn-offcanvas-left" href="schedule.html">Events Schedule</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Offcanvas -->
+
+
+    <!-- Begin Modal -->
+    <div>
+      <div id="dialog-content" style="display:none;max-width:500px;background-color: #f6f8fa;">
+        <p>
+        <div id="sb-search" class="sb-search">
+          <form>
+            <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search"
+              id="search">
+            <input class="sb-search-submit" type="submit" value="">
+            <span class="sb-icon-search"></span>
+          </form>
+        </div>
+        </p>
+
+
+        <h3>Enter your search term</h3>
+        <div id="search-algolia"></div>
+        <br />
+        <p>
+          We are always striving to be better. Please let us know if you did not find what you were looking for at
+          555-RAUL-WED or raulbridal@oilchange.com
+        </p>
+        <p>
+          Try these URLs<br />
+          Gallery | Schedule | Contact Info
+        </p>
+        <p>
+          Our Services | Email Us | Call Us
+        </p>
+      </div>
+
+      <!--
+      <p>
+        <button data-fancybox data-src="#dialog-content">Launch Dialog</button>
+      </p>
+      -->
+    </div>
+    <!-- End Modal -->
+
+    <!-- Begin Google Icons-->
+    <div class="container text-center top-logo">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <span class="material-symbols-outlined">
+            <a data-fancybox data-src="#dialog-content">search</a>
+          </span>
+
+
+          <span class="material-symbols-outlined">
+            <a href="/gallery.html">video_camera_front</a>
+          </span>
+          <span class="material-symbols-outlined">
+            <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+              menu
+            </a>
+          </span>
+        </div>
+        <div class="col-12 col-md-6">
+          <!--<span id="my-google-font">Raul's Bridal</span>-->
+          <span id="my-google-font"><img src="/images/logo.png" alt="Logo"></span>
+          <br>
+          <span id="top-logo-small">...and oil change</span>
+        </div>
+      </div>
+    </div>
+    <!-- Google Icons End -->
+
+    <!-- Top Navbar Begins -->
     <!-- Start SnazzyMenu -->
     <div class="container-flued">
       <div class="row">
@@ -263,103 +364,7 @@
 
 
 
-    <!-- Begin Offcanvas -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-          Raul's Bridal...And Oil Change
-        </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <div class="text-center">
-          <div class="spokesperson">
-            <img alt="Spokesperson" class="cropped-offcanvas" src="/images/square/spokesperson.jpg">
-          </div>
-          <br>
-          <blockquote>
-            Thanks you Raul for going out of your way to help me pick up the
-            perferct dress and then changing the oil of my car!
-            <cite>Rossie Williams</cite>
-          </blockquote>
 
-          <a class="btn btn-outline-primary btn-offcanvas-left" href="gallery.html">Gallery</a>
-          <a class="btn btn-outline-primary btn-offcanvas-left" href="participation-form.html">Participation Form</a>
-          <a class="btn btn-outline-primary btn-offcanvas-left" href="schedule.html">Events Schedule</a>
-        </div>
-      </div>
-    </div>
-    <!-- End Offcanvas -->
-
-
-    <!-- Begin Modal -->
-    <div>
-      <div id="dialog-content" style="display:none;max-width:500px;background-color: #f6f8fa;">
-        <p>
-        <div id="sb-search" class="sb-search">
-          <form>
-            <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search"
-              id="search">
-            <input class="sb-search-submit" type="submit" value="">
-            <span class="sb-icon-search"></span>
-          </form>
-        </div>
-        </p>
-
-
-        <h3>Enter your search term</h3>
-        <div id="search-algolia"></div>
-        <br />
-        <p>
-          We are always striving to be better. Please let us know if you did not find what you were looking for at
-          555-RAUL-WED or raulbridal@oilchange.com
-        </p>
-        <p>
-          Try these URLs<br />
-          Gallery | Schedule | Contact Info
-        </p>
-        <p>
-          Our Services | Email Us | Call Us
-        </p>
-      </div>
-
-      <!--
-      <p>
-        <button data-fancybox data-src="#dialog-content">Launch Dialog</button>
-      </p>
-      -->
-    </div>
-    <!-- End Modal -->
-
-    <!-- Begin Google Icons-->
-    <div class="container text-center top-logo">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <span class="material-symbols-outlined">
-            <a data-fancybox data-src="#dialog-content">search</a>
-          </span>
-
-
-          <span class="material-symbols-outlined">
-            <a href="/gallery.html">video_camera_front</a>
-          </span>
-          <span class="material-symbols-outlined">
-            <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-              menu
-            </a>
-          </span>
-        </div>
-        <div class="col-12 col-md-6">
-          <!--<span id="my-google-font">Raul's Bridal</span>-->
-          <span id="my-google-font"><img src="/images/logo.png" alt="Logo"></span>
-          <br>
-          <span id="top-logo-small">...and oil change</span>
-        </div>
-      </div>
-    </div>
-    <!-- Google Icons End -->
-
-    <!-- Top Navbar Begins -->
     <!---->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
@@ -508,7 +513,7 @@
 
 
 
-<!--
+      <!--
       <video width="300" height="150" autoplay="autoplay" id="video-mobile" loop="loop" muted="" playsinline=""
         class="BlinnVid-mobile">
 
