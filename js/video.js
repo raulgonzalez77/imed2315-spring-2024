@@ -197,6 +197,7 @@ document.addEventListener('DOMContentLoaded', function () {
              $('.BlinnVid-desktop').trigger('pause');
              $('.BlinnVid-mobile').show();
              $('.BlinnVid-mobile').trigger('play');*/
+            $("#BlinnVid video")[0].load();
 
         }
         else {
@@ -211,6 +212,7 @@ document.addEventListener('DOMContentLoaded', function () {
             $('.BlinnVid-mobile').trigger('pause');
             $('.BlinnVid-desktop').show();
             $('.BlinnVid-desktop').trigger('play');*/
+            $("#BlinnVid video")[0].load();
 
         }
     });
